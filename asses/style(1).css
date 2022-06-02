@@ -1,0 +1,659 @@
+:root {
+    /*主色輔色 改色*/
+    --main-color: #E15030;
+    --sub-color: #ffdb00;
+    --sub2-color: #00bbe9;
+    
+    /*勿動*/
+    --white-color: #fff;
+    --black-color: #232323;
+}
+
+/*--特別class，通用--*/
+
+.f-color{
+    color: var(--main-color);
+}
+
+
+/*--有預設，nav按鈕改色，需要在打開（因預設是btn-primary色，所以用此名）--*/
+/*
+.mbr-navbar .mbr-navbar__hamburger {
+    color: var(--sub2-color);
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--sub2-color);
+    border-color: var(--sub2-color);
+}
+.btn.btn-primary:hover {
+    background-color: #8d2890;
+    border-color: #8d2890;
+}
+.btn-primary.btn-2 {
+    color: #fff;
+    background-color: var(--sub2-color);
+    border-color: var(--sub2-color);
+}
+.btn.btn-primary.btn-2:hover {
+    background-color: #8d2890;
+    border-color: #8d2890;
+}
+*/
+
+
+
+
+/*--課程提醒/公告改色--*/
+.bulletin{
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+/*--body底圖--*/
+.mbr-parallax-background{
+    position: relative;
+    background-position: center 0;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.mbr-parallax-background-fixed{
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #E15030;
+    background-image: url(../../../assets/images/bg-01.jpg);
+}
+.mbr-parallax-background-fixed:before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    -webkit-background-size: cover!important;
+    -o-background-size: cover;
+    background-size: cover!important;
+    background-position: 50% 50%;
+}
+/*--第一屏--*/
+
+.mbr-section-top {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.mbr-main-background {
+    position: relative;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-title {
+    color: var(--main-color);
+    font-size: 5.8rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.main-title img {
+    max-width: 900px;
+}
+
+.main-title-sub {
+    color: var(--white-color);
+    padding: 0rem 0;
+}
+img.titlesubimg {
+    max-width: 550px;
+}
+
+.main-txt{
+    color: var(--white-color);
+    padding: 2rem;
+}
+.main-txt .h4{
+    line-height: 1.8;
+}
+.main-txt .txt_sty01 {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    padding: .5px 5px;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+    .h2.main-title-sub{
+        font-size: 1.25rem;
+    }
+    img.titlesubimg {
+        max-width: 350px;
+    }
+    .main-txt .h4 {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 414px) {
+    .mbr-section-top {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    } 
+}
+@media (max-width: 350px) {
+    .h2.main-title-sub{
+        font-size: 1.2rem;
+    }
+    img.titlesubimg {
+        max-width: 220px;
+    }
+    .main-txt .h4 {
+        font-size: 1rem;
+    }  
+}
+
+
+/*--Slogan改色--*/
+#slogan {
+    background-color: var(--sub-color);
+}
+#slogan h3{
+    color: var(--black-color);
+}
+
+/*--這堂課適合誰改色--*/
+#audience{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+#audience .unit-title{
+    color: var(--white-color);
+}
+/*細部調色，需要在解開*/
+/*
+#audience .unit-title .display-1{
+    color: var(--white-color);
+}
+#audience h3{
+    color: var(--white-color);
+}
+#audience i{
+   color: var(--white-color);
+}
+#audience p{
+    color: var(--white-color);
+}
+*/
+/*----------------*/
+
+/*--課程亮點改色--*/
+#highlights{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+#highlights .unit-title{
+    color: var(--black-color);
+}
+#highlights ul li{
+    color: var(--black-color);
+}
+
+/*--課綱/議程改色--*/
+#agenda{
+    color: var(--white-color);
+}
+#agenda .unit-title{
+    color: var(--white-color);
+}
+
+/**F-1 F-2 F-3 表格式共用**/
+/*全表格線，需要在解開*/
+/*
+#agenda table tbody th, #agenda table tbody td {
+    border: 1px solid #232323;
+}
+*/
+#agenda table tbody th{
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
+#agenda table tbody th.class_title, #agenda table.class-half tbody td.class_title{
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
+#agenda table tbody th.class_title.sp-2, #agenda table.class-half tbody td.class_title.sp-2{
+    background-color: var(--sub-color);
+    color: var(--black-color);
+}
+/*單表頭專用，限有在h2加sp-2*/
+#agenda table.class-colspan tbody td h2.sp-2{
+    color: var(--sub-color);
+}
+
+/*課項目*/
+#agenda table.class-colspan tbody td {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+/*課項目左區塊，需要在解開*/
+/*
+#agenda table.class-colspan tbody td.left{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+*/
+/*課項目右區塊，需要在解開*/
+/*
+#agenda table.class-colspan tbody td.right{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+*/
+
+/*時間、副標細部調色，需要在解開*/
+/*
+#agenda table.class-colspan tbody td.left h5, #agenda table.class-colspan tbody td.right h5{
+    color: var(--black-color);
+}
+#agenda table.class-colspan tbody td.left h2, #agenda table.class-colspan tbody td.right h2{
+    color: var(--black-color);
+}
+*/
+
+/*列點細部調色，需要在解開*/
+/*
+#agenda table.class-colspan tbody td.left h4, #agenda table.class-colspan tbody td.right h4{
+    color: var(--black-color);
+}
+*/
+
+/*講者細部調色*/
+/*
+#agenda table.class-colspan tbody td.left .class_speaker .speaker_name h3, #agenda table.class-colspan tbody td.right .class_speaker .speaker_name h3{
+    color: var(--black-color);
+}
+#agenda table.class-colspan tbody td.left .class_speaker h6, #agenda table.class-colspan tbody td.right .class_speaker h6,
+#agenda table.class-normal tbody td.left h6, #agenda table.class-normal tbody td.right h6{
+    color: var(--black-color);
+}
+*/
+
+
+/*表格細部調色，限有在td加class_line*/
+#agenda table.class-colspan tbody tr td.class_line{
+    border-top: 2px solid var(--black-color);
+/*    background-color: var(--black-color);*/
+}
+/*表格加橫線，限有在tr加class_line*/
+#agenda table.class-colspan tbody tr.class_line{
+    border-top: 2px solid var(--black-color);
+}
+/*表格皆有橫線，需要在解開*/
+/*
+#agenda table.class-colspan tbody tr td.left, #agenda table.class-colspan tbody tr td.right{
+    border-top: solid 2px var(--black-color);
+}
+*/
+
+/*************/
+
+/**切換Tab式**/
+/*列表不點擊，基本不用動*/
+#agenda .class-switch .nav .nav-link {
+    color: #b3b3b3;
+    background: #565656;
+}
+/*點擊列表1*/
+#agenda .class-switch .nav .nav-link.active, #agenda .class-switch .nav .nav-item .nav-link.active:hover, #agenda .class-switch .nav .nav-link.active:focus {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+/*點擊列表2*/
+#agenda .class-switch .nav .nav-link.nav-link2.active, #agenda .class-switch .nav .nav-item .nav-link.nav-link2.active:hover, #agenda .class-switch .nav .nav-link.nav-link2.active:focus {
+    background-color: var(--sub-color);
+    color: var(--white-color);
+}
+/*下半部*/
+#agenda .class-switch .switch_box {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: 2px solid var(--main-color);/*可要或不要*/
+}
+#agenda .class-switch .switch_box.switch_box2 {
+    border: 2px solid var(--sub-color);/*可要或不要*/
+}
+#agenda .class-switch .switch_box .audience {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+#agenda .class-switch .switch_box.switch_box2 .audience {
+    background-color: var(--sub-color);
+}
+
+/*表格文字*/
+#agenda .class-switch .switch_box .table-switch tbody td.class h3{
+    color: var(--main-color);
+}
+#agenda .class-switch .switch_box.switch_box2 .table-switch tbody td.class h3{
+    color: var(--sub-color);
+}
+/*表格文字細部調色，需要在解開*/
+/*
+#agenda .class-switch .switch_box .table-switch tbody td h5{
+    color: var(--main--color);
+}
+#agenda .class-switch .switch_box.switch_box2 .table-switch tbody td h5{
+    background-color: var(--sub--color);
+}
+#agenda .class-switch .switch_box .table-switch tbody td h3{
+    color: var(--main--color);
+}
+#agenda .class-switch .switch_box.switch_box2 .table-switch tbody td h3{
+    background-color: var(--sub--color);
+}
+#agenda .class-switch .switch_box .table-switch tbody td h6{
+    color: var(--main--color);
+}
+#agenda .class-switch .switch_box.switch_box2 .table-switch tbody td h6{
+    background-color: var(--sub--color);
+}
+*/
+
+/*表格基數列*/
+#agenda .class-switch .switch_box .table-switch tbody tr:nth-of-type(odd) {
+    background-color: #efefef;
+}
+#agenda .class-switch .switch_box .table-switch .title {
+    background-color: var(--sub2-color);
+    color: var(--white-color);
+}
+/*表格偶數列，需要在解開*/
+/*
+#agenda .class-switch .switch_box .table-switch tbody tr:nth-of-type(even) {
+    background-color: var(--white-color);
+}
+*/
+/*************/
+
+/**華麗式**/
+#agenda .class-gorgeous .article-geous .class_list .title {
+    background-image: linear-gradient(90deg, #ffffff, #ffffff, rgba(66, 178, 169, 0));
+    color: var(--main-color);
+}
+#agenda .class-gorgeous .article-geous .class_list .title-sub {
+    font-weight: 600;
+    color: var(--white-color);
+}
+#agenda .class-gorgeous .article-geous .class_list .txt_tag .h6{
+    color: #1b9e94;
+}
+#agenda .class-gorgeous .article-geous .class_list .txt_tag h6{
+    background-color: #f2f9f9;
+    border: solid 2px var(--sub2-color);
+    color: var(--sub2-color);
+}
+#agenda .class-gorgeous .article-geous .speaker-style .speaker_info h2 {
+    background-color: var(--sub2-color);
+    color: var(--white-color);
+}
+#agenda .class-gorgeous .article-geous .speaker-style .speaker_info h6 {
+    background-color: var(--sub2-color);
+    color: var(--white-color);
+}
+#agenda .class-gorgeous .article-geous .speaker-style .speaker_info .info-w{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+/*講師簡介鈕已有預設，需要在解開*/
+#agenda .class-gorgeous .article-geous .speaker-style .speaker_info .btn-info {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+    color: var(--white-color);
+}
+#agenda .class-gorgeous .article-geous .speaker-style .speaker_info .btn-info:hover, #agenda .class-gorgeous .article-geous .speaker-style .speaker_info .btn-info:focus{
+    background-color: #888;
+    border-color: #888;
+}
+/*細部調色，需要在解開*/
+/*
+#agenda .class-gorgeous .article-geous .class_list h5{
+    color: var(--black-color);
+}
+#agenda .class-gorgeous .article-geous .class_list h5 display-2{
+    color: var(--black-color);
+}
+#agenda .class-gorgeous .article-geous .class_list h4{
+    color: var(--black-color);
+}
+*/
+
+
+/*----------------*/
+
+
+/*--講師陣容改色--*/
+#lecturer{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+#lecturer .unit-title{
+    color: var(--black-color);
+}
+
+/*一位，細部調色，需要在解開*/
+/*
+#lecturer .speaker-1 .speaker_name h3{
+    color: var(--black-color);
+}
+#lecturer .speaker-1 .speaker_name h6{
+    color: var(--black-color);
+}
+#lecturer .speaker-1 .speaker_name p{
+    color: var(--black-color);
+}
+*/
+
+/*二~三位，底色塊加色，需要在解開*/
+/*
+#lecturer .speaker-col-2 .flex-item {
+    background-color: var(--white-color);
+}
+*/
+/*二~三位，細部調色，需要在解開*/
+/*
+#lecturer .speaker-col-2 .flex-item .speaker_name h3{
+    color: var(--black-color);
+}
+#lecturer .speaker-col-2 .flex-item .speaker_name h6{
+    color: var(--black-color);
+}
+#lecturer .speaker-col-2 .flex-item .speaker_name p{
+    color: var(--black-color);
+}
+*/
+
+/*多位*/
+#lecturer .speake-flex-many .speaker-card .speaker_img .name-layer, #lecturer .speake-flex-many .speaker-card .speaker_name{
+    background-color: var(--sub-color);
+}
+/*多位，細部調色，需要在解開*/
+/*
+#lecturer .speake-flex-many .speaker-card .speaker_name h3{
+    color: var(--white-color);
+}
+#lecturer .speake-flex-many .speaker-card .speaker_name h6{
+    color: var(--white-color);
+}
+#lecturer .speake-flex-many .speaker-card .speaker_img .name-layer p{
+    color: var(--white-color);
+}
+*/
+
+/*輪播*/
+#lecturer .speake-carousel .speaker-card .speaker_img .name-layer, #lecturer .speake-carousel .speaker-card .speaker_name{
+    background-color: var(--sub-color);
+}
+#lecturer .speake-carousel .owl-theme .owl-controls .owl-nav [class*=owl-]:hover, #lecturer .speake-carousel .owl-theme .owl-controls .owl-nav [class*=owl-]:focus{
+    background-color: var(--sub-color);
+}
+/*輪播，細部調色，需要在解開*/
+/*
+#lecturer .speake-carousel .speaker-card .speaker_name h3{
+    color: var(--white-color);
+}
+#lecturer .speake-carousel .speaker-card .speaker_name h6{
+    color: var(--white-color);
+}
+*/
+/*----------------*/
+
+
+/*--課前提問/合作夥伴改色--*/
+/*整條色帶*/
+#ask {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+/*方框色帶*/
+#ask:before {
+    background-color: #47eac8;
+}
+
+
+/*--學員回饋改色--*/
+#feedback{
+    background-color: var(--sub-color);
+    color: var(--black-color);
+}
+#feedback .unit-title{
+    color: var(--black-color);
+}
+#feedback .carousel-item h3{
+    color: var(--black-color);
+}
+
+
+/*--延伸閱讀改色--*/
+#article {
+    background-color: #f2f2f2;
+}
+#article .unit-title{
+    color: var(--black-color);
+}
+#article .article-pic{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+#article h6{
+    color: var(--black-color);
+}
+
+
+/*--宣傳影片--*/
+#mov{
+    background-color: var(--white-color);
+}
+
+
+/*--照片回顧改色--*/
+#photos{
+    background-color: var(--white-color);
+}
+#photos .unit-title{
+    color: var(--black-color);
+}
+
+
+/*--課程資訊改色--*/
+#infomation{
+    background-color: var(--sub2-color);
+    color: var(--white-color);
+}
+#infomation .unit-title{
+    color: var(--white-color);
+}
+/*普通票*/
+#infomation .btn-sold .hotsold, #infomation .plan-sold .hotsold{
+    background-color: var(--main-color);
+}
+#infomation .btn-sold .hotsold a {
+    color: var(--white-color);
+}
+/*特別票*/
+#infomation .btn-sold .sold-sp, #infomation .plan-sold .sold-sp, #infomation .table-sold .sold-sp{
+    background-color: var(--sub-color);
+}
+#infomation .btn-sold .sold-sp a, #infomation .plan-sold .sold-sp, #infomation .table-sold .sold-sp{
+    color: var(--black-color);
+}
+/*特別票-第二款*/
+#infomation .btn-sold .sold-sp2, #infomation .plan-sold .sold-sp2{
+    background-color: #f14944;
+}
+#infomation .btn-sold .sold-sp2 a, #infomation .plan-sold .sold-sp2{
+    color: var(--white-color);
+}
+/*表格費用*/
+#infomation .table-sold .infoway{
+    border-bottom: 2px solid #7b7b7b;
+}
+#infomation .table-sold .infoway{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+#infomation .table-sold .infocost {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+/*佈告欄*/
+#infomation .prize-box, #infomation .prize-box .high-light{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+#infomation .prize-box .high-light{
+    color: var(--main-color);
+}
+
+#infomation p .co-qa{
+    color: var(--main-color);
+}
+/*hover*/
+#infomation .btn-sold .hotsold:hover, #infomation .btn-sold .hotsold:focus{
+    background-color: #7b7b7b;
+}
+#infomation .btn-sold .hotsold:hover a, #infomation .btn-sold .hotsold:focus a{
+    color: #efefef;
+}
+/*hover已預設，需要在解開*/
+#infomation p .co-qa:hover, #infomation p .co-qa:focus{
+    color: var(--sub-color);
+}
+/*----------------*/
+
+/*--qna--*/
+#qna{
+    color: var(--white-color);
+}
+#qna .unit-title{
+    color: color: var(--white-color);
+}
+#qna p a{
+    color: var(--sub-color);
+}
+/*hover已預設，需要在解開*/
+/*
+#qna p a:hover, #qna p a:focus {
+    color: #00BCD4;
+}
+*/
+
+/*--footer改色--*/
+#footer .scrolltop {
+    background: var(--main-color);
+    color: var(--white-color);
+    opacity: .9;
+}
